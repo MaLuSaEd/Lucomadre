@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rufina&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-lg:2em;
+    --text-md:1.6em;
+}
+
+/*-------Globales----*/
+
+html{
+    font-size: 62.5%  /*1 rem = 10px */ ;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+
+/*--------------------------------*/
+
+body{
+    background-color: #EBEBEB;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10vh 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 10vh;
+}
+
+/*---------------header------------------------------*/
+
+header{
+    grid-column: 1 / 13; /*Poscion en la grilla del body*/
+    grid-row: 1 / 2;    /*Poscion en la grilla del body*/
+    background-color:#F7F7EB; /*Color de fondo*/
+}
+
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header .logo{
+    flex-basis: 10%; /* porcentaje que ocupa en su box */
+}
+
+header .logo__img{
+    max-height: 4em;
+}
+
+header .menu{
+    display: flex;
+    flex-basis: 40%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header .menu__item{
+    background-color: #F3F3E2;
+    padding: 1rem;
+    font-size: 1.7rem;
+    transition: color .5s linear;
+}
+
+header .menu__item :hover{
+    color: blue;
+}
+
+header .instagram__img{
+    max-height: 5em;
+}
+
+
+/*-----------------CuerpoPpal----------------------*/
+
+
+.index__ppal{
+    grid-column: 3 / 11; /*Poscion en la grilla del body*/
+    grid-row: 2 / 12; /*Poscion en la grilla del body*/
+    display: flex;
+    flex-direction: row;
+    background-color: #EBEBEB;
+}
+
+/*---Cuerpo Ppal izq Panes--*/
+
+.index__ppal__izq{
+    width: 40.1vw;
+}
+
+.panes__img{
+    width: 100%;
+    height: auto;
+    padding-top: 1em;
+    margin-left: 1em;
+}
+
+/*---Cuerpo Ppal derecho---*/
+
+.index__ppal__der{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.mousse__img{
+    width: 100%;
+    height: auto;
+    padding-top: 1em;
+}
+/*---Cuerpo Ppal medialunas-----*/
+.medialuna__img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*----------------------Footer--------------------------*/
+footer{
+    background-color: #F7F7EB;
+    grid-column: 1 / 13; /*Posicion en la grilla*/
+    grid-row: 12 / 13;  /*Posicion en la grilla*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+footer .wsp__img{
+    max-height: 6em;
+}
+

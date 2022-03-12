@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Rufina&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+a, a:hover, a:focus, a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+header{
+	background-color: #F7F7EB;
+	height: 100px;
+	position: relative;
+}
+
+.logo{
+	display: inline-block;
+	height: 100px;
+	position: absolute;
+	margin-left: 40px;
+}
+
+.logo__img{
+        
+	height: 100px;
+   
+	
+}
+
+.navbar{
+	display: inline-block;
+}
+
+.instagram__img{
+	height: auto;
+    width: auto;
+    max-height: 75px;
+    max-width: 75px;
+	margin-top: 15px;
+	position: absolute;
+	
+	
+}
+
+
+.menu{
+	height: 100px;
+	list-style-type: none;
+	position: relative;
+	margin-right:130px;
+	margin-left: 130px;
+	margin-top: 25px;
+	
+}
+
+.menu__item{
+	
+	display: inline-block;
+	background: #F3F3E2;
+	height: 50px;
+	width: 138px;
+	text-align: center;
+	font-family:  'Rufina', serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: #000000;
+	display: inline-block; 
+	margin-left: 114px;
+	margin-right:0px;
+	padding: 15px;
+
+}
+
+footer{
+	background-color: #F7F7EB;
+	height: 90px;
+	position: relative;
+	
+}
+
+.footer__item{
+	display: inline-block;
+}
+
+.wsp{
+	float: right;
+}
+
+.wsp__img{
+	height: 75px;
+	margin-right: 80px;
+	margin-top: 10px;
+}
+
+.copyright{
+	float: left;
+	margin-left: 40px ;
+	margin-top: 45px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.seccion{
+	display: none;
+}
+
+.cuerpoPpal{
+	background-color:#EBEBEB;
+}
+
+.col__izq{
+	margin-left: 250px;
+	width: 40%;
+	display: inline-block;
+}
+
+.col__der{
+	display: inline-block;
+	width: 40%;
+	
+}
+
+.panes__img{
+	width:100%;
+	height:auto;
+}
+
+.mousse__img{
+	width:50%;
+	height: auto;
+}
+
+.medialuna__img{
+	width: 50%;
+	height: auto;
+}
+
+.pagina__contacto{
+	background-color: #EBEBEB;
+}
+
+.contacto{
+	margin-top: 62px;
+	margin-bottom: 32px;
+	margin-left: 208px;
+	background-color: #C4C4C4;
+	width: 1024px;
+	height: 664px;
+	padding-top: 43px;
+	padding-left: 54px;
+}
+
+.formulario__fila1__campo{
+	display: inline-block;
+	width: 33%;
+	font-family:  'Rufina', serif;
+	font-size: 30px;
+}
+
+.contacto__encabezado{
+	font-family:  'Rufina', serif;
+	text-align: center;
+	font-size: 48px;
+	margin-top: 43px;
+}
+
+
+.formulario__fila1{
+	margin-top: 30px;
+	margin-bottom: 52px;
+}
+
+.formulario__fila2{
+	margin-bottom: 22px;
+}
+
+.formulario__fila3{
+	margin-bottom: 34px;
+}
+
+.formulario__fila4{
+	text-align: center;
+}
+
+.formulario__campo{
+	font-family:  'Rufina', serif;
+	font-size: 30px;
+}
+
+.submitButton{
+	Width :170px;
+	Height :50px;
+	padding: 3px;
+}
