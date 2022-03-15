@@ -8,20 +8,20 @@
     <link rel="icon" type="image/x-icon" href="./Media/logo-lucomadre.ico">
     <link rel="stylesheet" href="style.css">
 </head>
-	<body>    
-		<!--PAGINA CON DESCRIPCION DE LUCAS, SUS PRINCIPIOS EN LA PASTELERIA Y SUS IDEALES-->
-		<!--Ppio de encabezado-->
+<!--PAGINA CON DESCRIPCION DE LUCAS, SUS PRINCIPIOS EN LA PASTELERIA Y SUS IDEALES-->
+	<body class="Luco">    
+		<!--------------Encabezado-------------------------------->
 		<header>
-			<picture class="logo">
-				<a class="logo__link" href="./index.html">
-					<img class="logo__img"  src="./Media/logo-lucomadre.jpeg" alt="logo">
-				</a>
-			</picture>
-
 			<nav class="navbar">
-				<ul class = "menu">
+				<picture class="logo"> <!--Logo-->
+					<a href="./index.html">
+						<img class="logo__img" src="./Media/logo-lucomadre.png" alt="logo__img">
+					</a>
+				</picture>
+	
+				<ul class="menu"> <!--Menu-->
 					<li class="menu__item">
-						<a class="menu__link" href="./Luco.html">Luco </a>
+						<a class="menu__link" href="./Luco.html">Luco</a>
 					</li>
 					<li class="menu__item">
 						<a class="menu__link" href="./Productos.html">Productos</a>
@@ -32,46 +32,57 @@
 					<li class="menu__item">
 						<a class="menu__link" href="./Contacto.html">Contacto</a>
 					</li>
-
 				</ul>
+	
+				<picture class="instagram"> <!--Instagram-->
+					<a href="">
+						<img class="instagram__img" src="./Media/Instagram.png" alt="instagram__img">
+					</a>
+				</picture>
+	
 			</nav>
-
-			<picture class="instagram">
-				<a class="instagram__link" href="https://www.instagram.com/lucomadre/?hl=es-la" target="_blank">
-					<img class="instagram__img" src="./Media/Instagram.png" alt="instagram">
-				</a>
-			</picture>
+	
 		</header>
-		<!--Fin de encabezado-->
+		<!--Luco cuerpo ppal------------------------------>
+		<section class="Luco__ppal flex__row">
 
-		<h1>Sobre Luco</h1>
-
-		<div class="Luco__cuerpoPpal">
-			<span class="Luco__col__izq">
-				<picture class="LucoPict">
-					<img class="Luco1__img" src="" alt="Luco1">
+			<section class="Luco__ppal__izq">
+				<picture class = "Luco1">
+					<img class="Luco1__img" src="./Media/Fotos/luco1.jpeg" alt="FotoLuco">
 				</picture>
+			</section>
+			<section class="Luco__ppal__cen">
+				<p class="Luco__ppal__cen__texto">Mi enfoque está en el aspecto nutritivo del pan.
+					Por eso trabajo solamente con harinas integrales (porque contienen todas las partes del grano molido) y harinas orgánicas, sin químicos, sin refinar.
+					Las harinas son de @molinomayal y @molino_campo_claro.
+				</p>
 
-			</span>
+				<p class="Luco__ppal__cen__texto"> Todo amasado a mano. Sin levadura comercial, fermantados en frío con masa madre.
+					(Sí, tengo un delantal hermoso de @gorrionoficial)
 
-			<span class="Luco__col__cen">
-
-			</span>
-
-			<span class="Luco__col__der">
-				<picture class="LucoPict">
-					<img class="Luco2__img" src="" alt="Luco2">
+				</p>
+			</section>
+			<section class="Luco__ppal__der">
+				<picture class = "Luco2">
+					<img class="Luco2__img" src="./Media/Fotos/luco.jpeg" alt="FotoLuco">
 				</picture>
-			</span>
-		</div>
+			</section>
 
-	    <!--Pie de pagina-->
+		</section>
+		
+		<!----------------Pie de pagina-------------------------------->
 		<footer>
-			<h4 class="footer__item copyright">Copyright &copy Mariano Salguero</h4>
-			<h4 class="footer__item wsp"><a class="wsp__link" href="">
-	             <img class="wsp__img" src="./Media/wspLogo.png" alt="wsp">
-	         </a></h4>
+			<div class="copyright">
+				<h4 >Copyright &copy Mariano Salguero</h4>
+			</div>
+			
+	
+			<div class="wsp">
+				<a class="wsp__link" href="">
+				<img class="wsp__img" src="./Media/wspLogo.png" alt="wsp">
+				</a>
+			</div>
 		</footer>
-		<!--Fin de pie de pagina-->
+		<!----------------------------------------------------------->
 	</body>
 </html>

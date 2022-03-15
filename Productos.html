@@ -10,18 +10,18 @@
     </head>
     <body>
     	<!--Pagina con fotos y descripcion de los productos que ofrece luco-->
-        <!--Ppio de encabezado-->
+        <!--------------Encabezado-------------------------------->
 		<header>
-			<picture class="logo">
-				<a class="logo__link" href="./index.html">
-					<img class="logo__img"  src="./Media/logo-lucomadre.jpeg" alt="logo">
-				</a>
-			</picture>
-
 			<nav class="navbar">
-				<ul class = "menu">
+				<picture class="logo"> <!--Logo-->
+					<a href="./index.html">
+						<img class="logo__img" src="./Media/logo-lucomadre.png" alt="logo__img">
+					</a>
+				</picture>
+	
+				<ul class="menu"> <!--Menu-->
 					<li class="menu__item">
-						<a class="menu__link" href="./Luco.html">Luco </a>
+						<a class="menu__link" href="./Luco.html">Luco</a>
 					</li>
 					<li class="menu__item">
 						<a class="menu__link" href="./Productos.html">Productos</a>
@@ -32,53 +32,110 @@
 					<li class="menu__item">
 						<a class="menu__link" href="./Contacto.html">Contacto</a>
 					</li>
-					
 				</ul>
+	
+				<picture class="instagram"> <!--Instagram-->
+					<a href="">
+						<img class="instagram__img" src="./Media/Instagram.png" alt="instagram__img">
+					</a>
+				</picture>
+	
 			</nav>
-
-			<picture class="instagram">
-				<a class="instagram__link" href="https://www.instagram.com/lucomadre/?hl=es-la" target="_blank">
-					<img class="instagram__img" src="./Media/Instagram.png" alt="instagram">
-				</a>
-			</picture>
+	
 		</header>
-		
 		<!--Fin de encabezado-->
+		<!--Productos Cuerpo PPal-->
+		<section class="Productos__ppal">
 
-		<h1>Lucomadre Productos</h1>
+			<ul class="productos">
+				
+				<li class="productos__item flex__column">
+					
+						<h3 class="productos__item__nombre">Pan de centeno</h2>
+						
+						<section class="productos__item__fotoYdescripcion flex__row">
+							
+							<picture class="productos__item__foto">
+								<img class="productos__item__img" src="./Media/Fotos/panCenteno.jpg" alt="centeno">
+							</picture>
 
-		<ul class="prodcutos">
-			<li class="productos__producto">
-				<div class="prducto1">
+							<section class="productos__item__descripcion">
+								<p>
+									Pan 100% centeno. Mi preferido. El aroma que deja en el ambiente es increíble. 
+									La miga es húmeda y esponjosa. El sabor es intenso y muy característico, por momentos floral.
+								</p>
 
+								<p>
+									También es mi preferido porque me gusta ser contrero 😬 Se lo suele describir como "hay que acostumbrarse a su acidez", 
+									incluso a veces como "mazacote", "pan de hospital"... y yo quiero decir que nunca me pasó tal cosa, lo quiero desde siempre.
+								</p>
+
+								<p>
+									Y es el preferido de mucha gente me parece, porque es el que más sale.... 
+									A ver si lo bancan acá en público 🤓
+								</p>
+
+								<p>
+									Como siempre, 100% masamadre, sin levadura. Harinas agroecológicas/orgánicas.
+								</p>
+							</section>
+							
+						</section>
+					</div>
+	
+				</li>
+
+				<li class="productos__item flex__column">
+					
+					<h3 class="productos__item__nombre">Babka</h2>
+					
+					<section class="productos__item__fotoYdescripcion flex__row">
+						
+						<picture class="productos__item__foto">
+							<img class="productos__item__img" src="./Media/Fotos/babka.jpeg" alt="babka">
+						</picture>
+
+						<section class="productos__item__descripcion">
+							<p>
+								Babka. Masa esponjosa, suave, mantecosa, ligeramente dulce, trenzada con relleno de manteca, azúcar y canela.
+							</p>
+
+							<p>
+								Hermosa masa. Mi versión tiene harina integral orgánica @molinomayal (fermentada con masa madre, sin levadura) - huevos pastoriles @grafergranja - manteca de pastura también de Grafer - azúcar mascabo orgánica - yogur natural @granjalarecria.
+							</p>
+
+							<p>
+								Método @maurizio y las ganas de hacerla me las contagió @yosoyelpan.
+							</p>
+
+							<p>
+								Como siempre, 100% masamadre, sin levadura. Harinas agroecológicas/orgánicas.
+							</p>
+						</section>
+
+
+						
+					</section>
 				</div>
 
 			</li>
-			<li class="productos__producto">
-				<div class="producto2">
+			</ul>
 
-				</div>
-			</li>
-			<li class="productos__producto">
-				<div class="producto3">
+		</section>
 
-				</div>
-			</li>
-			<li class="productos__producto">
-				<div class="producto4">
-
-				</div>
-			</li>
-		</ul>
-
-        <!--Pie de pagina-->
-		<footer>
-			<h4 class="footer__item copyright">Copyright &copy Mariano Salguero</h4>
-			<h4 class="footer__item wsp"><a class="wsp__link" href="">
-                <img class="wsp__img" src="./Media/wspLogo.png" alt="wsp">
-            </a></h4>
-		</footer>
 		
-		<!--Fin de pie de pagina-->
+        <!----------------Pie de pagina-------------------------------->
+		<footer>
+			<div class="copyright">
+				<h4 >Copyright &copy Mariano Salguero</h4>
+			</div>
+			
+	
+			<div class="wsp">
+				<a class="wsp__link" href="">
+				<img class="wsp__img" src="./Media/wspLogo.png" alt="wsp">
+				</a>
+			</div>
+		</footer>
     </body>
 </html>

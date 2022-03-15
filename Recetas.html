@@ -9,70 +9,99 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <!--Pagina con algunas de las recetas de Luco.-->
-        	<!--Ppio de encabezado-->
-			<header>
-				<picture class="logo">
-					<a class="logo__link" href="./index.html">
-						<img class="logo__img"  src="./Media/logo-lucomadre.jpeg" alt="logo">
+    	<!--Pagina con recetas de  luco-->
+        <!--------------Encabezado-------------------------------->
+		<header>
+			<nav class="navbar">
+				<picture class="logo"> <!--Logo-->
+					<a href="./index.html">
+						<img class="logo__img" src="./Media/logo-lucomadre.png" alt="logo__img">
 					</a>
 				</picture>
 	
-				<nav class="navbar">
-					<ul class = "menu">
-						<li class="menu__item">
-							<a class="menu__link" href="./Luco.html">Luco </a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="./Productos.html">Productos</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="./Recetas.html">Recetas</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="./Contacto.html">Contacto</a>
-						</li>
-						
-					</ul>
-				</nav>
+				<ul class="menu"> <!--Menu-->
+					<li class="menu__item">
+						<a class="menu__link" href="./Luco.html">Luco</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="./Productos.html">Productos</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="./Recetas.html">Recetas</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="./Contacto.html">Contacto</a>
+					</li>
+				</ul>
 	
-				<picture class="instagram">
-					<a class="instagram__link" href="https://www.instagram.com/lucomadre/?hl=es-la" target="_blank">
-						<img class="instagram__img" src="./Media/Instagram.png" alt="instagram">
+				<picture class="instagram"> <!--Instagram-->
+					<a href="">
+						<img class="instagram__img" src="./Media/Instagram.png" alt="instagram__img">
 					</a>
 				</picture>
-			</header>
-		
+	
+			</nav>
+	
+		</header>
 		<!--Fin de encabezado-->
-		<h1>Lucomadre Recetas</h1>
+		<!--Productos Cuerpo PPal-->
+		<section class="Recetas__ppal">
 
-		<ul class="recetas">
-			<li class="recetas__receta">
-				<div class="receta1">
-
-				</div>
-			</li>
-			<li class="recetas__receta">
-				<div class="receta2">
-
-				</div>
-			</li>
-			<li class="recetas__receta">
-				<div class="receta3">
+			<ul class="recetas">
+				
+				<li class="recetas__item flex__column">
 					
-				</div>
-			</li>
-		</ul>
+						<h3 class="recetas__item__nombre">Pan de centeno</h2>
+						
+						<section class="recetas__item__fotoYdescripcion flex__row">
+							
+							<picture class="recetas__item__foto">
+								<img class="recetas__item__img" src="./Media/Fotos/panCenteno.jpg" alt="centeno">
+							</picture>
 
+							<section class="recetas__item__descripcion">
+								<p>
+									Pan 100% centeno. Mi preferido. El aroma que deja en el ambiente es increíble. 
+									La miga es húmeda y esponjosa. El sabor es intenso y muy característico, por momentos floral.
+								</p>
 
-        <!--Pie de pagina-->
-        <footer>
-			<h4 class="footer__item copyright">Copyright &copy Mariano Salguero</h4>
-			<h4 class="footer__item wsp"><a class="wsp__link" href="">
-                <img class="wsp__img" src="./Media/wspLogo.png" alt="wsp">
-            </a></h4>
-		</footer>
+								<p>
+									También es mi preferido porque me gusta ser contrero 😬 Se lo suele describir como "hay que acostumbrarse a su acidez", 
+									incluso a veces como "mazacote", "pan de hospital"... y yo quiero decir que nunca me pasó tal cosa, lo quiero desde siempre.
+								</p>
+
+								<p>
+									Y es el preferido de mucha gente me parece, porque es el que más sale.... 
+									A ver si lo bancan acá en público 🤓
+								</p>
+
+								<p>
+									Como siempre, 100% masamadre, sin levadura. Harinas agroecológicas/orgánicas.
+								</p>
+							</section>
+							
+						</section>
+					</div>
+	
+				</li>
+
+			</ul>
+
+		</section>
+
 		
-	    <!--Fin de pie de pagina-->
+        <!----------------Pie de pagina-------------------------------->
+		<footer>
+			<div class="copyright">
+				<h4 >Copyright &copy Mariano Salguero</h4>
+			</div>
+			
+	
+			<div class="wsp">
+				<a class="wsp__link" href="">
+				<img class="wsp__img" src="./Media/wspLogo.png" alt="wsp">
+				</a>
+			</div>
+		</footer>
     </body>
 </html>
