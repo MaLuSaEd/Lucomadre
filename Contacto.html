@@ -8,20 +8,20 @@
         <link rel="icon" type="image/x-icon" href="./Media/logo-lucomadre.ico">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body class="pagina__contacto">
-    	<!--Pagina para contactarse con lucas por pedidos o consultas-->
-        <!--Ppio de encabezado-->
+    <body>
+    	<!--Pagina contacto con luco-->
+        <!--------------Encabezado-------------------------------->
 		<header>
-			<picture class="logo">
-				<a class="logo__link" href="./index.html">
-					<img class="logo__img"  src="./Media/logo-lucomadre.jpeg" alt="logo">
-				</a>
-			</picture>
-
 			<nav class="navbar">
-				<ul class = "menu">
+				<picture class="logo"> <!--Logo-->
+					<a href="./index.html">
+						<img class="logo__img" src="./Media/logo-lucomadre.png" alt="logo__img">
+					</a>
+				</picture>
+	
+				<ul class="menu"> <!--Menu-->
 					<li class="menu__item">
-						<a class="menu__link" href="./Luco.html">Luco </a>
+						<a class="menu__link" href="./Luco.html">Luco</a>
 					</li>
 					<li class="menu__item">
 						<a class="menu__link" href="./Productos.html">Productos</a>
@@ -32,75 +32,68 @@
 					<li class="menu__item">
 						<a class="menu__link" href="./Contacto.html">Contacto</a>
 					</li>
-					
 				</ul>
+	
+				<picture class="instagram"> <!--Instagram-->
+					<a href="">
+						<img class="instagram__img" src="./Media/Instagram.png" alt="instagram__img">
+					</a>
+				</picture>
+	
 			</nav>
-
-			<picture class="instagram">
-				<a class="instagram__link" href="https://www.instagram.com/lucomadre/?hl=es-la" target="_blank">
-					<img class="instagram__img" src="./Media/Instagram.png" alt="instagram">
-				</a>
-			</picture>
+	
 		</header>
-		
 		<!--Fin de encabezado-->
-		<h1 class="seccion">Lucomadre Contacto</h1>
+		<!--Contacto Cuerpo PPal-->
+		<section class="Contacto__ppal">
 
-		<section >
-
-			<div class="contacto">
-
+			<span class="contacto flex__column">
 				<p class="contacto__encabezado">ENVIANOS TU MENSAJE</p>
-				
-				<form class="formulario" action="/action_page.php" method="get">
-
-					<div class="formulario__fila1">
+				<form class="formulario flex__column" action="/action_page.php" method="get">
+					<span class="formulario__fila1 flex__row">
 						<span class=" formulario__fila1__campo formulario__nombre">
 							<div><label for="fname">Nombre:</label></div>
-							<div><input type="text" id="fname" name="fname"></div>
+							<div><input class="input" type="text" id="fname" name="fname"></div>
 						</span>
 						
 						<span class=" formulario__fila1__campo formulario__email">
 							<div><label for="femail">Mail:</label></div>
-							<div><input type="email" id="femail" name="femail"></div>
+							<div><input class="input" type="email" id="femail" name="femail"></div>
 						</span>
 	
 						<span class=" formulario__fila1__campo formulario__telefono">
 							<div><label for="fphone">Teléfono:</label></div>
-							<div><input type="number" id="fphone" name="fphone"></div>
+							<div><input class="input" type="number" id="fphone" name="fphone"></div>
 						</span>
 
-					</div>
-
-					
+					</span>
 					<div class="formulario__fila2">
 						<span class="formulario__campo formulario__asunto">
 							<div><label for="asunto">Asunto:</label></div>
-							<div><textarea name="asunto" rows="2" cols="100"></textarea></div>
+							<div><textarea class="asunto" name="asunto"></textarea></div>
 						</span>
 					</div>
-
 					<div class="formulario__fila3"></div>
 					<span class="formulario__campo formulario__mensaje">
 						<div><label for="mensaje">Mensaje:</label></div>
-						<div><textarea name="mensaje" rows="10" cols="100"></textarea></div>
+						<div><textarea class="mensaje" name="mensaje" ></textarea></div>
 					</span>
-					<p class="formulario__fila4"><input class="formulario__campo submitButton" type="submit" value="Enviar"></4>
-				
+					<span class="formulario__fila4 flex__row"><input class="formulario__campo submitButton" type="submit" value="Enviar"></span>
 				</form>
-
-			</div>
-
-        </section>
-
-        <!--Pie de pagina-->
+			</span>
+		</section>
+        <!----------------Pie de pagina-------------------------------->
 		<footer>
-			<h4 class="footer__item copyright">Copyright &copy Mariano Salguero</h4>
-			<h4 class="footer__item wsp"><a class="wsp__link" href="">
-                <img class="wsp__img" src="./Media/wspLogo.png" alt="wsp">
-            </a></h4>
+			<div class="copyright">
+				<h4 >Copyright &copy Mariano Salguero</h4>
+			</div>
+			
+	
+			<div class="wsp">
+				<a class="wsp__link" href="">
+				<img class="wsp__img" src="./Media/wspLogo.png" alt="wsp">
+				</a>
+			</div>
 		</footer>
-		
-		<!--Fin de pie de pagina-->
-</body>
+    </body>
 </html>
