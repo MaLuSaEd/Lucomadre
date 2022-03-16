@@ -54,13 +54,16 @@ header{
     grid-column: 1 / 13; /*Poscion en la grilla del body*/
     grid-row: 1 / 2;    /*Poscion en la grilla del body*/
     background-color:#F7F7EB; /*Color de fondo*/
+    
 }
 
 header .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem;
+    
+    align-content: center;
 }
 
 header .logo{
@@ -88,6 +91,7 @@ header .menu__item{
 header .menu__item :hover{
     color: blue;
 }
+
 
 header .instagram__img{
     max-height: 5em;
