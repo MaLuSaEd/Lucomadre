@@ -1,91 +1,155 @@
 <!DOCTYPE html>
 <html lang="es-la">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucomadre</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="index">
-    <!--------------Encabezado-------------------------------->
-    <header>
-        <nav class="navbar">
-            <picture class="logo"> <!--Logo-->
-                <a href="./index.html">
-                    <img class="logo__img" src="./Media/logo-lucomadre.png" alt="logo__img">
-                </a>
-            </picture>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lucomadre</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="index">
+        <!------------------Encabezado-------------------------------->
+		<!------------------Encabezado - Desktop---------------------->
+		<header class="desktop flex_column">
+			<nav class="navbar">
+				<picture class="logo"> <!--Logo-->
+					<a href="./index.html">
+						<img class="logo__img" src="./Media/logo-lucomadre.png" alt="logo__img">
+					</a>
+				</picture>
+				<ul class="menu"> <!--Menu-->
+					<li class="menu__item">
+						<a class="menu__link" href="./Luco.html">Luco</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="./Productos.html">Productos</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="./Recetas.html">Recetas</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="./Contacto.html">Contacto</a>
+					</li>
+				</ul>
+				<picture class="instagram"> <!--Instagram-->
+					<a href="">
+						<img class="instagram__img" src="./Media/Instagram.png" alt="instagram__img">
+					</a>
+				</picture>
+			</nav>
+		</header>
 
-            <ul class="menu"> <!--Menu-->
-                <li class="menu__item">
-                    <a class="menu__link" href="./Luco.html">Luco</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./Productos.html">Productos</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./Recetas.html">Recetas</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./Contacto.html">Contacto</a>
-                </li>
-            </ul>
+		<!--Encabezado - Mobile-->
 
-            <picture class="instagram"> <!--Instagram-->
-                <a href="">
-                    <img class="instagram__img" src="./Media/Instagram.png" alt="instagram__img">
-                </a>
-            </picture>
+		<header class="mobile">
 
-        </nav>
-
-    </header>
-<!--------------------CuerpoPpal---------------------------->
-    <section class="index__ppal">
-
-        <section class="index__ppal__izq">
-            <picture class="panes">
-                <a href="">
-                    <img class="panes__img" src="./Media/Fotos/pan.jpg" alt="Panes">
-                    <!--Linkea a Panes en la pagina productos-->
-                </a>
-            </picture>
-        </section>
-
-        <aside class="index__ppal__der">
-            <section class="index__ppal__mousse">
-                <picture class="mousse">
+			<div class="mobile__contenedor flex__row">
+				<picture class="instagram__mobile"> <!--Instagram-->
+					<a href="">
+						<img class="instagram__mobile__img" src="./Media/Instagram.png" alt="instagram__img">
+					</a>
+				</picture>
+	
+				<picture class="logo__mobile"> <!--Logo-->
+					<a href="./index.html">
+						<img class="logo__mobile__img" src="./Media/logo-lucomadre.png" alt="logo__img">
+					</a>
+				</picture>
+	
+				<picture class="wsp__mobile">
+					<a class="wsp__link" href="">
+					<img class="wsp__mobile__img" src="./Media/wspLogo.png" alt="wsp">
+					</a>
+				</picture>
+			</div>
+		</header>
+		<!--Fin de encabezado-->
+        <!--------------------CuerpoPpal---------------------------->
+        <!------Desktop---->
+        <section class="desktop index__ppal">
+            <section class="index__ppal__izq">
+                <picture class="panes">
                     <a href="">
-                        <img class="mousse__img" src="./Media/Fotos/mousse.jpg" alt="Mousse">
-                        <!--Linkea a Mousse en la pagina productos-->
+                        <img class="panes__img" src="./Media/Fotos/pan.jpg" alt="Panes">
+                        <!--Linkea a Panes en la pagina productos-->
                     </a>
                 </picture>
             </section>
-            <section class="index__ppal__medialunas">
-                <picture class="medialuna">
+            <aside class="index__ppal__der">
+                <section class="index__ppal__mousse">
+                    <picture class="mousse">
+                        <a href="">
+                            <img class="mousse__img" src="./Media/Fotos/mousse.jpg" alt="Mousse">
+                            <!--Linkea a Mousse en la pagina productos-->
+                        </a>
+                    </picture>
+                </section>
+                <section class="index__ppal__medialunas">
+                    <picture class="medialuna">
+                        <a href="">
+                            <img class="medialuna__img" src="./Media/Fotos/medialunas.jpg" alt="Medialunas">
+                            <!--Linkea a Medialunas en la pagina productos-->
+                        </a> 
+                    </picture>
+                </section>
+            </aside>
+        </section>
+        <!---------->
+        <!---Mobile---->
+        <section class="mobile">
+            <section class="mobile__index__ppal">
+                <picture class="panes">
                     <a href="">
-                        <img class="medialuna__img" src="./Media/Fotos/medialunas.jpg" alt="Medialunas">
-                        <!--Linkea a Medialunas en la pagina productos-->
-                    </a> 
+                        <img class="panes__img" src="./Media/Fotos/pan3.jpg" alt="Panes">
+                        <!--Linkea a Panes en la pagina productos-->
+                    </a>
                 </picture>
+
+                <picture class="mousse">
+                    <a href="">
+                        <img class="mousse__img" src="./Media/Fotos/mousse2.jpg" alt="Mousse">
+                        <!--Linkea a Mousse en la pagina productos-->
+                    </a>
+                </picture>
+
+
             </section>
-        </aside>
-    </section>
-
-<!----------------Pie de pagina-------------------------------->
-    <footer>
-        <div class="copyright">
-            <h4 >Copyright &copy Mariano Salguero</h4>
-        </div>
-        
-
-        <div class="wsp">
-            <a class="wsp__link" href="">
-            <img class="wsp__img" src="./Media/wspLogo.png" alt="wsp">
-            </a>
-        </div>
-    </footer>
-<!----------------------------------------------------------->
-</body>
+        </section>
+      
+        <!-----------------Fin cuerpoPpal------------------------------>
+        <!----------------footer------------------------->
+		<!--footer Desktop---->
+		<footer class="desktop">
+			<div class="copyright">
+				<h4 >Copyright &copy Mariano Salguero</h4>
+			</div>
+			
+			<div class="wsp">
+				<a class="wsp__link" href="">
+				<img class="wsp__img" src="./Media/wspLogo.png" alt="wsp">
+				</a>
+			</div>
+		</footer>
+		<!--footer Mobile-->
+		
+		<footer class="mobile">
+			<nav class="navbar">
+				<ul class="menu flex__row"> <!--Menu-->
+					<li class="menu__item">
+						<a class="menu__link" href="./Luco.html">Luco</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="./Productos.html">Productos</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="./Recetas.html">Recetas</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="./Contacto.html">Contacto</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+		<!--Fin footer-->
+    </body>
 </html>

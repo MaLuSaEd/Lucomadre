@@ -8,17 +8,17 @@
         <link rel="icon" type="image/x-icon" href="./Media/logo-lucomadre.ico">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-    	<!--Pagina contacto con luco-->
-        <!--------------Encabezado-------------------------------->
-		<header>
+    <body> <!--Pagina contacto con luco-->
+    	
+        <!------------------Encabezado-------------------------------->
+		<!------------------Encabezado - Desktop---------------------->
+		<header class="desktop flex_column">
 			<nav class="navbar">
 				<picture class="logo"> <!--Logo-->
 					<a href="./index.html">
 						<img class="logo__img" src="./Media/logo-lucomadre.png" alt="logo__img">
 					</a>
 				</picture>
-	
 				<ul class="menu"> <!--Menu-->
 					<li class="menu__item">
 						<a class="menu__link" href="./Luco.html">Luco</a>
@@ -33,67 +33,143 @@
 						<a class="menu__link" href="./Contacto.html">Contacto</a>
 					</li>
 				</ul>
-	
 				<picture class="instagram"> <!--Instagram-->
 					<a href="">
 						<img class="instagram__img" src="./Media/Instagram.png" alt="instagram__img">
 					</a>
 				</picture>
-	
 			</nav>
+		</header>
+
+		<!--Encabezado - Mobile-->
+
+		<header class="mobile">
+
+			<div class="mobile__contenedor flex__row">
+				<picture class="instagram__mobile"> <!--Instagram-->
+					<a href="">
+						<img class="instagram__mobile__img" src="./Media/Instagram.png" alt="instagram__img">
+					</a>
+				</picture>
 	
+				<picture class="logo__mobile"> <!--Logo-->
+					<a href="./index.html">
+						<img class="logo__mobile__img" src="./Media/logo-lucomadre.png" alt="logo__img">
+					</a>
+				</picture>
+	
+				<picture class="wsp__mobile">
+					<a class="wsp__link" href="">
+					<img class="wsp__mobile__img" src="./Media/wspLogo.png" alt="wsp">
+					</a>
+				</picture>
+			</div>
 		</header>
 		<!--Fin de encabezado-->
 		<!--Contacto Cuerpo PPal-->
-		<section class="Contacto__ppal">
 
-			<span class="contacto flex__column">
-				<p class="contacto__encabezado">ENVIANOS TU MENSAJE</p>
-				<form class="formulario flex__column" action="/action_page.php" method="get">
-					<span class="formulario__fila1 flex__row">
-						<span class=" formulario__fila1__campo formulario__nombre">
-							<div><label for="fname">Nombre:</label></div>
-							<div><input class="input" type="text" id="fname" name="fname"></div>
-						</span>
+		<div class="contacto__ppal">
+
+			<form class="formulario flex__column" action="/form.php" method="get" enctype="text/plain">
+
+				<div class="formulario__header flex__row">ENVIANOS TU MENSAJE</div>
+
+				<div class="formulario__row flex__row">
+					<div class="campo flex__row">
+						<div class="campo__nombre">
+							<label for = "name"> Nombre </label>
+						</div>
 						
-						<span class=" formulario__fila1__campo formulario__email">
-							<div><label for="femail">Mail:</label></div>
-							<div><input class="input" type="email" id="femail" name="femail"></div>
-						</span>
-	
-						<span class=" formulario__fila1__campo formulario__telefono">
-							<div><label for="fphone">Teléfono:</label></div>
-							<div><input class="input" type="number" id="fphone" name="fphone"></div>
-						</span>
-
-					</span>
-					<div class="formulario__fila2">
-						<span class="formulario__campo formulario__asunto">
-							<div><label for="asunto">Asunto:</label></div>
-							<div><textarea class="asunto" name="asunto"></textarea></div>
-						</span>
+						<input class="campo__input" type="text" id="name" name="name" placeholder="Tu nombre..">
+						
 					</div>
-					<div class="formulario__fila3"></div>
-					<span class="formulario__campo formulario__mensaje">
-						<div><label for="mensaje">Mensaje:</label></div>
-						<div><textarea class="mensaje" name="mensaje" ></textarea></div>
-					</span>
-					<span class="formulario__fila4 flex__row"><input class="formulario__campo submitButton" type="submit" value="Enviar"></span>
-				</form>
-			</span>
-		</section>
-        <!----------------Pie de pagina-------------------------------->
-		<footer>
+				</div>
+
+				<div class="formulario__row flex__row">
+					<div class="campo flex__row">
+						<div class="campo__nombre">
+							<label for = "phone"> Teléfono </label>
+						</div>
+						<input class="campo__input" type="number" id="phone" name="phone" placeholder="Tu teléfono..">
+						
+					</div>
+				</div>
+
+				<div class="formulario__row flex__row">
+					<div class="campo flex__row">
+						<div class="campo__nombre">
+							<label for = "mail"> Mail </label>
+						</div>
+						
+						<input class="campo__input" type="mail" id="mail" name="mail" placeholder="Tu mail..">
+						
+					</div>
+				</div>
+
+				<div class="formulario__row flex__row">
+					<div class="campo flex__row">
+						<div class="campo__nombre">
+							<label for = "asunto"> Asunto </label>
+						</div>
+						
+						<input class="campo__input" type="text" id="asunto" name="asunto" >
+						
+					</div>
+				</div>
+
+				<div class="formulario__row flex__row">
+					<div class="campo flex__row">
+						<div class="campo__nombre">
+							<label for = "msj"> Mensaje </label>
+						</div>
+						
+						<textarea class="campo__imput mensaje" id="msj" name="msj"></textarea>
+						
+					</div>
+				</div>
+
+				<div class="enviar flex__row">
+					<input type="reset" value="Enviar">
+				</div>
+			</form>
+
+
+		</div>
+
+		
+        <!----------------footer------------------------->
+		<!--footer Desktop---->
+		<footer class="desktop">
 			<div class="copyright">
 				<h4 >Copyright &copy Mariano Salguero</h4>
 			</div>
 			
-	
 			<div class="wsp">
 				<a class="wsp__link" href="">
 				<img class="wsp__img" src="./Media/wspLogo.png" alt="wsp">
 				</a>
 			</div>
 		</footer>
+		<!--footer Mobile-->
+		
+		<footer class="mobile">
+			<nav class="navbar">
+				<ul class="menu flex__row"> <!--Menu-->
+					<li class="menu__item">
+						<a class="menu__link" href="./Luco.html">Luco</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="./Productos.html">Productos</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="./Recetas.html">Recetas</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="./Contacto.html">Contacto</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+		<!--Fin footer-->
     </body>
 </html>
