@@ -10,15 +10,15 @@
     </head>
     <body>
     	<!--Pagina con fotos y descripcion de los productos que ofrece luco-->
-        <!--------------Encabezado-------------------------------->
-		<header>
+        <!------------------Encabezado-------------------------------->
+		<!------------------Encabezado - Desktop---------------------->
+		<header class="desktop flex_column">
 			<nav class="navbar">
 				<picture class="logo"> <!--Logo-->
 					<a href="./index.html">
 						<img class="logo__img" src="./Media/logo-lucomadre.png" alt="logo__img">
 					</a>
 				</picture>
-	
 				<ul class="menu"> <!--Menu-->
 					<li class="menu__item">
 						<a class="menu__link" href="./Luco.html">Luco</a>
@@ -33,15 +33,37 @@
 						<a class="menu__link" href="./Contacto.html">Contacto</a>
 					</li>
 				</ul>
-	
 				<picture class="instagram"> <!--Instagram-->
-					<a href="">
+					<a class="instagram__link" href="https://www.instagram.com/lucomadre/?hl=es-la" target="blank_">
 						<img class="instagram__img" src="./Media/Instagram.png" alt="instagram__img">
 					</a>
 				</picture>
-	
 			</nav>
+		</header>
+
+		<!--Encabezado - Mobile-->
+
+		<header class="mobile">
+
+			<div class="mobile__contenedor flex__row">
+				<picture class="instagram__mobile"> <!--Instagram-->
+					<a class="instagram__link" href="https://www.instagram.com/lucomadre/?hl=es-la" target="blank_">
+						<img class="instagram__mobile__img" src="./Media/Instagram.png" alt="instagram__img">
+					</a>
+				</picture>
 	
+				<picture class="logo__mobile"> <!--Logo-->
+					<a href="./index.html">
+						<img class="logo__mobile__img" src="./Media/logo-lucomadre.png" alt="logo__img">
+					</a>
+				</picture>
+	
+				<picture class="wsp__mobile">
+					<a class="wsp__link" href="">
+					<img class="wsp__mobile__img" src="./Media/wspLogo.png" alt="wsp">
+					</a>
+				</picture>
+			</div>
 		</header>
 		<!--Fin de encabezado-->
 		<!--Productos Cuerpo PPal-->
@@ -53,7 +75,7 @@
 					
 						<h3 class="productos__item__nombre">Pan de centeno</h2>
 						
-						<section class="productos__item__fotoYdescripcion flex__row">
+						<section class="productos__item__fotoYdescripcion">
 							
 							<picture class="productos__item__foto">
 								<img class="productos__item__img" src="./Media/Fotos/panCenteno.jpg" alt="centeno">
@@ -122,20 +144,39 @@
 			</ul>
 
 		</section>
-
-		
-        <!----------------Pie de pagina-------------------------------->
-		<footer>
+        <!----------------footer------------------------->
+		<!--footer Desktop---->
+		<footer class="desktop">
 			<div class="copyright">
 				<h4 >Copyright &copy Mariano Salguero</h4>
 			</div>
 			
-	
 			<div class="wsp">
 				<a class="wsp__link" href="">
 				<img class="wsp__img" src="./Media/wspLogo.png" alt="wsp">
 				</a>
 			</div>
 		</footer>
+		<!--footer Mobile-->
+		
+		<footer class="mobile">
+			<nav class="navbar">
+				<ul class="menu flex__row"> <!--Menu-->
+					<li class="menu__item">
+						<a class="menu__link" href="./Luco.html">Luco</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="./Productos.html">Productos</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="./Recetas.html">Recetas</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="./Contacto.html">Contacto</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+		<!--Fin footer-->
     </body>
 </html>

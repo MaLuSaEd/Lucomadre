@@ -38,8 +38,6 @@ a {
 	flex-direction: column;
 }
 
-
-
 /*--------------------------------*/
 
 body{
@@ -49,7 +47,6 @@ body{
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 10vh 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 10vh;
 }
-
 
 /*---------------header------------------------------*/
 
@@ -99,7 +96,6 @@ header .instagram{
 header .instagram__img{
     max-height: 5em;
 }
-
 /*--------Fin Header Desktop------*/
 /*--------Footer Desktop---------*/
 footer{
@@ -160,183 +156,10 @@ footer .wsp__img{
 }
 /*--Fin index---*/
 
-/*Luco*/
 
-.Luco__ppal{
-	grid-column: 3 / 11; /*Poscion en la grilla del body*/
-    grid-row: 3 / 11; /*Poscion en la grilla del body*/
-	align-items: center;
-	background-color: #F4F3F6;
-}
 
-.Luco__ppal__izq{
-	width: 32vw;
-	margin-left: 5vh;
-	margin-right: 2vh;
-}
-
-.Luco__ppal__cen{
-	width: 30vw;
-}
-
-.Luco__ppal__cen__texto{
-	font-size: 1.5em;
-	line-height: 1.6em;
-	text-align: justify;
-	margin-bottom: 1em;
-}
-
-.Luco__ppal__der{
-	width: 25vw;
-	margin-right: 5vh;
-	margin-left: 2vh;
-}
-
-.Luco1__img{
-	width: 100%;
-	height: auto;
-}
-
-.Luco2__img{
-	width: 100%;
-	height: auto;
-}
-/*-------*/
-/*Productos*/
-
-.Productos__ppal{
-	grid-column: 3 / 11; /*Poscion en la grilla del body*/
-	grid-row: 2 / 12; /*Poscion en la grilla del body*/
-	overflow:auto;
-}
-
-.productos{
-    padding-top: 2vh;
-}
-
-.productos__item{
-	width: 100%;
-	background-color: #C4C4C4;
-    margin-bottom: 2vh;
-}
-
-.productos__item__nombre{
-	text-align: center;
-	font-size: 7em;
-}
-
-.productos__item__fotoYdescripcion{
-    display: flex;
-    flex-direction: row;
-	width: 100%;
-	justify-content: space-around;
-    margin: 1vh;
-}
-
-.productos__item__foto{
-	width: 50%;
-}
-
-.productos__item__img{
-	width: 80%;
-	height: auto;
-}
-
-.productos__item__descripcion{
-    width: 40%;
-	font-size: 1.5em;
-	line-height: 1.6em;
-	text-align: justify;
-	
-}
-/*---------*/
-/*Recetas*/
-.Recetas__ppal{
-	grid-column: 3 / 11; /*Poscion en la grilla del body*/
-	grid-row: 2 / 12; /*Poscion en la grilla del body*/
-	overflow:auto;
-}
-
-.recetas{
-    padding-top: 2vh;
-}
-
-.recetas__item{
-	width: 100%;
-	background-color: #C0CED3;
-    margin-bottom: 2vh;
-}
-
-.recetas__item__nombre{
-	text-align: center;
-	font-size: 7em;
-}
-
-.recetas__item__fotoYdescripcion{
-    display: flex;
-    flex-direction: row;
-	width: 100%;
-	justify-content: space-around;
-    margin: 1vh;
-}
-
-.recetas__item__foto{
-	width: 50%;
-}
-
-.recetas__item__img{
-	width: 80%;
-	height: auto;
-}
-
-.recetas__item__descripcion{
-	width: 40%;
-}
-
-.recetas__item__descripcion{
-	font-size: 1.5em;
-	line-height: 1.6em;
-	text-align: justify;
-	
-}
 /*---------------------------*/
-/*-------Contacto------------*/
-.contacto__ppal{
-    grid-column: 4 / 10; /*Poscion en la grilla del body*/
-	grid-row: 4 / 10; /*Poscion en la grilla del body*/
-    background-color: #C4C4C4;
-}
-.formulario{
-    justify-content: space-around;
-    height: 100%;
-}
-.formulario__header{
-    justify-content:  center;
-    font-size: 3em;
-}
-.formulario__row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.campo{
-    display: flex;
-    flex-direction: row;
-    width: 55%;
-    justify-content: space-between;
-    font-size: 2em;
-}
-.campo__input{
-    width: 20vh;
-}
-.mensaje{
-    height: 20vh;
-}
-.enviar{
-    justify-content: center;
-}
-/*-------------------*/
-/* Mobile - screen menor que 600px de ancho */
+/* Responsive - screen menor que 600px de ancho */
 @media screen and (max-width: 600px) {
   
     /*---deshabilito todo lo del desktop--*/
@@ -399,11 +222,13 @@ footer .wsp__img{
     /*------------------*/
     /*-----CuerposPpals------*/
     /*index*/
+
     .mobile{
         display: block;
         grid-row: 2 / 12;
         grid-column: 1 / 13;
     }
+
     .mobile__index__ppal{
         display: flex;
         flex-direction: column;
@@ -415,133 +240,200 @@ footer .wsp__img{
         width: 90%;
         height: auto;
         padding: 0;
-        margin: 1em 1.5em 0.5em 1.5em;
         
     }
+
     .mousse__img{
         width: 90%;
         height: auto;
-        margin: 0em 1.5em 0em 1.5em ;
-        padding: 0;
-    }
-    /*Luco*/
-    .Luco1__img{
-        margin-top: 1em;
-    }
-    .mobile p{
-        font-size: 1.3em;
-	    line-height: 1.4em;
-	    text-align: justify;
-	    margin-bottom: 1em;
-    }
-    /*Productos*/
-    .Productos__ppal{
-        grid-column: 2 / 12; /*Poscion en la grilla del body*/
-        grid-row: 2 / 12; /*Poscion en la grilla del body*/
-        overflow:auto;
-    }
-    .productos__item__nombre{
-        text-align: center;
-        font-size: 5em;
-    }
-    .productos__item__fotoYdescripcion{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: space-around;
-        margin: 1vh;
-    }
-    .productos__item__foto{
-        width: 100%;
-    }
-    .productos__item__img{
-        width: 80%;
-        height: auto;
-        margin-left: 4vh;
-    }
-    .productos__item__descripcion{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        width: 90%;
-        font-size: 1.3em;
-        line-height: 1.3em;
-        text-align: justify;
-        margin: 1.5vh 0 0 1.5vh;
-    }
-    /*Recetas*/
-    .Recetas__ppal{
-        grid-column: 2 / 12; /*Poscion en la grilla del body*/
-        grid-row: 2 / 12; /*Poscion en la grilla del body*/
-        overflow:auto;
-    }
-    .recetas__item__nombre{
-        text-align: center;
-        font-size: 5em;
-    }
-    .recetas__item__fotoYdescripcion{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: space-around;
-        margin: 1vh;
-    }
-    .recetas__item__foto{
-        width: 100%;
-    }
-    .recetas__item__img{
-        width: 80%;
-        height: auto;
-        margin-left: 4vh;
-    }
-    .recetas__item__descripcion{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        width: 90%;
-        font-size: 1.3em;
-        line-height: 1.3em;
-        text-align: justify;
-        margin: 1.5vh 0 0 1.5vh;
-    }
-    /*Contacto*/
-    .contacto__ppal{
-        grid-column: 3 / 11; /*Poscion en la grilla del body*/
-        grid-row: 3 / 10; /*Poscion en la grilla del body*/
-        background-color: #C4C4C4;
-    }
-    .formulario{
-        justify-content: space-between;
-        height: 100%;
-    }
-    .formulario__header{
-        justify-content:  center;
-        font-size: 3vh;
-        margin: 1vh;
-    }
-    .formulario__row{
-        display: flex;
-        flex-direction: row;
-        justify-content:flex-start;
-    }
-    .campo{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: space-between;
-        font-size: 1.9vh;
-        margin: 0.5vh;
-    }
-    .campo__input{
-        width: 100%;
-    }
-    .mensaje{
-        height: 20vh;
-    }
-    .enviar{
-        justify-content: center;
-        margin: 0.5vh;
     }
 
+    
 }
-/*------------Fin Mobile---------------------*/
+
+/*------------------------------------Luco---------------------------*/
+
+/*-----cuerpoPpal---*/
+
+.Luco__ppal{
+	grid-column: 3 / 11; /*Poscion en la grilla del body*/
+    grid-row: 3 / 11; /*Poscion en la grilla del body*/
+	align-items: center;
+	background-color: #F4F3F6;
+}
+
+.Luco__ppal__izq{
+	width: 32vw;
+	margin-left: 5vh;
+	margin-right: 2vh;
+	
+}
+
+.Luco__ppal__cen{
+	width: 30vw;
+}
+
+.Luco__ppal__cen__texto{
+	font-size: 1.5em;
+	line-height: 1.6em;
+	text-align: justify;
+	margin-bottom: 1em;
+}
+
+.Luco__ppal__der{
+	width: 25vw;
+	margin-right: 5vh;
+	margin-left: 2vh;
+}
+
+.Luco1__img{
+	width: 100%;
+	height: auto;
+}
+
+.Luco2__img{
+	width: 100%;
+	height: auto;
+}
+
+/*-------------Productos---------------------*/
+
+.Productos__ppal{
+	grid-column: 3 / 11; /*Poscion en la grilla del body*/
+	grid-row: 2 / 12; /*Poscion en la grilla del body*/
+	overflow:auto;
+}
+
+.productos{
+    padding-top: 2vh;
+}
+
+.productos__item{
+	width: 100%;
+	background-color: #C4C4C4;
+    margin-bottom: 2vh;
+}
+
+.productos__item__nombre{
+	text-align: center;
+	font-size: 7em;
+}
+
+.productos__item__fotoYdescripcion{
+	width: 100%;
+	justify-content: space-around;
+    margin: 1vh;
+}
+
+.productos__item__foto{
+	width: 50%;
+}
+
+.productos__item__img{
+	width: 80%;
+	height: auto;
+}
+
+.productos__item__descripcion{
+	width: 40%;
+}
+
+.productos__item__descripcion{
+	font-size: 1.5em;
+	line-height: 1.6em;
+	text-align: justify;
+	
+}
+
+/*------------Recetas---------------------*/
+
+.Recetas__ppal{
+	grid-column: 3 / 11; /*Poscion en la grilla del body*/
+	grid-row: 2 / 12; /*Poscion en la grilla del body*/
+	overflow:auto;
+}
+
+.recetas{
+    padding-top: 2vh;
+}
+
+.recetas__item{
+	width: 100%;
+	background-color: #C0CED3;
+    margin-bottom: 2vh;
+}
+
+.recetas__item__nombre{
+	text-align: center;
+	font-size: 7em;
+}
+
+.recetas__item__fotoYdescripcion{
+	width: 100%;
+	justify-content: space-around;
+    margin: 1vh;
+}
+
+.recetas__item__foto{
+	width: 50%;
+}
+
+.recetas__item__img{
+	width: 80%;
+	height: auto;
+}
+
+.recetas__item__descripcion{
+	width: 40%;
+}
+
+.recetas__item__descripcion{
+	font-size: 1.5em;
+	line-height: 1.6em;
+	text-align: justify;
+	
+}
+
+/*-------Contacto------------*/
+
+.contacto__ppal{
+    grid-column: 4 / 10; /*Poscion en la grilla del body*/
+	grid-row: 4 / 10; /*Poscion en la grilla del body*/
+    background-color: #C4C4C4;
+}
+
+.formulario{
+    justify-content: space-around;
+    height: 100%;
+}
+
+.formulario__header{
+    justify-content:  center;
+    font-size: 3em;
+}
+
+.formulario__row{
+    justify-content: center;
+}
+
+.campo{
+    width: 55%;
+    justify-content: space-between;
+    font-size: 2em;
+}
+
+.campo__input{
+    width: 20vh;
+}
+
+.mensaje{
+    height: 20vh;
+}
+
+.enviar{
+    justify-content: center;
+
+}
+
+
+

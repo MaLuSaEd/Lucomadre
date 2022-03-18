@@ -10,15 +10,15 @@
 </head>
 <!--PAGINA CON DESCRIPCION DE LUCAS, SUS PRINCIPIOS EN LA PASTELERIA Y SUS IDEALES-->
 	<body class="Luco">    
-		<!--------------Encabezado-------------------------------->
-		<header>
+		<!------------------Encabezado-------------------------------->
+		<!------------------Encabezado - Desktop---------------------->
+		<header class="desktop flex_column">
 			<nav class="navbar">
 				<picture class="logo"> <!--Logo-->
 					<a href="./index.html">
 						<img class="logo__img" src="./Media/logo-lucomadre.png" alt="logo__img">
 					</a>
 				</picture>
-	
 				<ul class="menu"> <!--Menu-->
 					<li class="menu__item">
 						<a class="menu__link" href="./Luco.html">Luco</a>
@@ -33,18 +33,41 @@
 						<a class="menu__link" href="./Contacto.html">Contacto</a>
 					</li>
 				</ul>
-	
 				<picture class="instagram"> <!--Instagram-->
-					<a href="">
+					<a class="instagram__link" href="https://www.instagram.com/lucomadre/?hl=es-la" target="_blank">
 						<img class="instagram__img" src="./Media/Instagram.png" alt="instagram__img">
 					</a>
 				</picture>
-	
 			</nav>
-	
 		</header>
+
+		<!--Encabezado - Mobile-->
+
+		<header class="mobile">
+
+			<div class="mobile__contenedor flex__row">
+				<picture class="instagram__mobile"> <!--Instagram-->
+					<a class="instagram__link" href="https://www.instagram.com/lucomadre/?hl=es-la" target="_blank">
+						<img class="instagram__mobile__img" src="./Media/Instagram.png" alt="instagram__img">
+					</a>
+				</picture>
+	
+				<picture class="logo__mobile"> <!--Logo-->
+					<a href="./index.html">
+						<img class="logo__mobile__img" src="./Media/logo-lucomadre.png" alt="logo__img">
+					</a>
+				</picture>
+	
+				<picture class="wsp__mobile">
+					<a class="wsp__link" href="">
+					<img class="wsp__mobile__img" src="./Media/wspLogo.png" alt="wsp">
+					</a>
+				</picture>
+			</div>
+		</header>
+		<!--Fin de encabezado-->
 		<!--Luco cuerpo ppal------------------------------>
-		<section class="Luco__ppal flex__row">
+		<section class="Luco__ppal desktop flex__row">
 
 			<section class="Luco__ppal__izq">
 				<picture class = "Luco1">
@@ -67,22 +90,60 @@
 					<img class="Luco2__img" src="./Media/Fotos/luco.jpeg" alt="FotoLuco">
 				</picture>
 			</section>
+		</section>
 
+		<!-- Luco - Mobile-->
+
+		<section class="mobile flex__column">
+			<picture class = "Luco1">
+				<img class="Luco1__img" src="./Media/Fotos/luco1.jpeg" alt="FotoLuco">
+			</picture>
+
+			<p class="Luco__ppal__cen__texto">Mi enfoque está en el aspecto nutritivo del pan.
+				Por eso trabajo solamente con harinas integrales (porque contienen todas las partes del grano molido) y harinas orgánicas, sin químicos, sin refinar.
+				Las harinas son de @molinomayal y @molino_campo_claro.
+			</p>
+
+			<p class="Luco__ppal__cen__texto"> Todo amasado a mano. Sin levadura comercial, fermantados en frío con masa madre.
+				(Sí, tengo un delantal hermoso de @gorrionoficial)
+
+			</p>			
 		</section>
 		
-		<!----------------Pie de pagina-------------------------------->
-		<footer>
+		<!----------------footer------------------------->
+		<!--footer Desktop---->
+		<footer class="desktop">
 			<div class="copyright">
 				<h4 >Copyright &copy Mariano Salguero</h4>
 			</div>
 			
-	
 			<div class="wsp">
 				<a class="wsp__link" href="">
 				<img class="wsp__img" src="./Media/wspLogo.png" alt="wsp">
 				</a>
 			</div>
 		</footer>
+		<!--footer Mobile-->
+		
+		<footer class="mobile">
+			<nav class="navbar">
+				<ul class="menu flex__row"> <!--Menu-->
+					<li class="menu__item">
+						<a class="menu__link" href="./Luco.html">Luco</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="./Productos.html">Productos</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="./Recetas.html">Recetas</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="./Contacto.html">Contacto</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+		<!--Fin footer-->
 		<!----------------------------------------------------------->
 	</body>
 </html>
