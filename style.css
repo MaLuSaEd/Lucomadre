@@ -124,21 +124,61 @@ footer .wsp__img{
     grid-row: 2 / 12; /*Poscion en la grilla del body*/
     display: flex;
     flex-direction: row;
-    background-color: #EBEBEB;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(235, 235, 235);
 }
 
 /*---Cuerpo Ppal izq Panes--*/
 
 .index__ppal__izq{
-    width: 40.1vw;
+    width: 60%;
+}
+
+.index__ppal__der{
+    width: 40%;
+}
+
+.panes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .panes__img{
     width: 100%;
     height: auto;
-    padding-top: 1em;
-    margin-left: 1em;
-}
+    /*padding-top: 1em;
+    margin-left: 1em;*/
+    transition: .5s ease;
+    backface-visibility: hidden;
+    }
+
+  .panes:hover .image {
+    opacity: 0.3;
+  }
+
+  .panes:hover .img__titulo {
+    opacity: 1;
+  }
+
+  .img__titulo {
+    position: absolute;
+    transition: .5s ease;
+    opacity: 0;
+    width: 20%;
+    /*transform: scale(1);*/
+
+  }
+
+  .texto{
+    background-color: rgba(235, 235, 235, 0.3);
+    color: rgb(255, 255, 255, 1);
+    font-size: 300%;
+    padding: 0% 0 0% 0 ;
+    text-align: center;
+  }
 
 /*---Cuerpo Ppal derecho---*/
 
@@ -148,16 +188,50 @@ footer .wsp__img{
     flex-direction: column;
 }
 
+.mousse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .mousse__img{
     width: 100%;
     height: auto;
-    padding-top: 1em;
+    /*padding-top: 1em;*/
+    transition: .5s ease;
 }
+
+.mousse:hover .image {
+    opacity: 1;
+  }
+
+.mousse:hover .img__titulo {
+    opacity: 1;
+  }
+
 /*---Cuerpo Ppal medialunas-----*/
+
+.medialunas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .medialuna__img{
     width: 100%;
     height: auto;
+    transition: .5s ease;
 }
+
+.medialunas:hover .image {
+    opacity: 0.3;
+  }
+
+.medialunas:hover .img__titulo {
+    opacity: 1;
+  }
 /*--Fin index---*/
 
 /*Luco*/
