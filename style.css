@@ -376,13 +376,17 @@ footer .wsp__img{
 /*---------------------------*/
 /*-------Contacto------------*/
 .contacto__ppal{
-    grid-column: 4 / 10; /*Poscion en la grilla del body*/
+    grid-column: 1 / 14; /*Poscion en la grilla del body*/
 	grid-row: 4 / 10; /*Poscion en la grilla del body*/
-    background-color: #C4C4C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .formulario{
     justify-content: space-around;
     height: 100%;
+    background-color: #C4C4C4;
 }
 .formulario__header{
     justify-content:  center;
