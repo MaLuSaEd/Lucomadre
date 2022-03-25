@@ -69,69 +69,40 @@
 		<!--Fin de encabezado-->
 		<!--Contacto Cuerpo PPal-->
 
-		<div class="contacto__ppal">
+		<div class="contacto__ppal container">
 
 			<form class="formulario flex__column" action="/form.php" method="get" enctype="text/plain">
 
 				<div class="formulario__header flex__row">ENVIANOS TU MENSAJE</div>
-
-				<div class="formulario__row ">
-					<div class="campo">
-						<div class="campo__nombre">
-							<label for = "name"> Nombre </label>
-						</div>
-						
-						<input class="campo__input" type="text" id="name" name="name" placeholder="Tu nombre..">
-						
-					</div>
+				
+				<div class=" mb-3 campo">
+					<label for="name" class="form-label">Nombre</label>
+    				<input type="text" class="form-control" id="name">
 				</div>
 
-				<div class="formulario__row ">
-					<div class="campo">
-						<div class="campo__nombre">
-							<label for = "phone"> Teléfono </label>
-						</div>
-						<input class="campo__input" type="number" id="phone" name="phone" placeholder="Tu teléfono..">
-						
-					</div>
+				<div class=" mb-3 campo">
+					<label for="phone" class="form-label">Teléfono</label>
+    				<input type="number" class="form-control" id="phone">
 				</div>
 
-				<div class="formulario__row ">
-					<div class="campo ">
-						<div class="campo__nombre">
-							<label for = "mail"> Mail </label>
-						</div>
-						
-						<input class="campo__input" type="mail" id="mail" name="mail" placeholder="Tu mail..">
-						
-					</div>
+				<div class=" mb-3 campo">
+					<label for="mail" class="form-label">Mail</label>
+    				<input type="mail" class="form-control" id="mail">
 				</div>
 
-				<div class="formulario__row ">
-					<div class="campo ">
-						<div class="campo__nombre">
-							<label for = "asunto"> Asunto </label>
-						</div>
-						
-						<input class="campo__input" type="text" id="asunto" name="asunto" >
-						
-					</div>
+				<div class="mb-3 campo">
+					<label for="asunto" class="form-label">Asunto</label>
+    				<input type="text" class="form-control" id="asunto">
 				</div>
 
-				<div class="formulario__row ">
-					<div class="campo ">
-						<div class="campo__nombre">
-							<label for = "msj"> Mensaje </label>
-						</div>
-						
-						<textarea class="campo__imput mensaje" id="msj" name="msj"></textarea>
-						
-					</div>
+				<div class=" mb-3 campo">
+					<label for="msj" class="form-label">Mensaje</label>
+					<textarea name="mensaje" class="form-control" tabindex="4"
+          placeholder="Tu mensaje" required></textarea>
+    				
 				</div>
 
-				<div class="enviar flex__row">
-					<input type="reset" value="Enviar">
-				</div>
+				<button type="submit" class="btn btn-primary">Enviar</button>
 			</form>
 
 

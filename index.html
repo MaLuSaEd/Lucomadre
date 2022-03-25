@@ -66,44 +66,52 @@
 		</header>
 		<!--Fin de encabezado-->
         <!--------------------CuerpoPpal---------------------------->
+
+		<div id="carouselExampleDark" class="index__ppal carousel carousel-dark slide desktop" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+			  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+			  <div class="carousel-item active" data-bs-interval="10000">
+				<img src="./Media/Fotos/pan.jpg" class="d-block mx-auto  panes__img"  alt="...">
+				<div class="carousel-caption d-none d-md-block">
+				  <h5>Panes</h5>
+				  <p> Fermentados con masa madre, sin levadura. Tres ingredientes: harina, agua y sal. </p>
+				</div>
+			  </div>
+			  <div class="carousel-item" data-bs-interval="2000">
+				<img src="./Media/Fotos/medialunas.jpg" class="d-block mx-auto medialuna__img" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+				  <h5>Medialunas</h5>
+				  <p>Sin levadura, muy poco azúcar, sin almíbar. Pura medialuna</p>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<img src="./Media/Fotos/mousse.jpg" class="d-block mx-auto mousse__img" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+				  <h5>La Mousse</h5>
+				  <p>Lleva una mezcla de chocolate 100% y chocolate 70%. Así se logra un sabor profundo a chocolate con bastante amargor.</p>
+				  <p>	La textura es aireada y densa a la vez. Contundente.</p>
+				</div>
+			  </div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Next</span>
+			</button>
+		  </div>
+
+
+
+
         <!------Desktop---->
-        <section class="desktop index__ppal">
-            <section class="index__ppal__izq">
-                <!--picture class="panes"-->
-                    <a class="panes" href="">
-                        <img class="panes__img" src="./Media/Fotos/pan.jpg" alt="Panes">
-                        <!--Linkea a Panes en la pagina productos-->
-						<div class="img__titulo">
-							<div class="texto">Panes</div>
-						</div>
-                    </a>
-                <!--/picture-->
-            </section>
-            <aside class="index__ppal__der">
-                <section class="index__ppal__mousse mousse">
-                    <!--picture class="mousse"-->
-                        <a  href="">
-                            <img class="mousse__img" src="./Media/Fotos/mousse.jpg" alt="Mousse">
-                            <!--Linkea a Mousse en la pagina productos-->
-                        </a>
-						<div class="img__titulo">
-							<div class="texto">Mousse</div>
-						</div>
-                    <!--/picture-->
-                </section>
-                <section class="index__ppal__medialunas medialunas">
-                    <!--picture class="medialuna"-->
-                        <a href="">
-                            <img class="medialuna__img" src="./Media/Fotos/medialunas.jpg" alt="Medialunas">
-                            <!--Linkea a Medialunas en la pagina productos-->
-                        </a> 
-                    <!--/picture-->
-						<div class="img__titulo">
-							<div class="texto">Medialunas</div>
-						</div>
-                </section>
-            </aside>
-        </section>
+        
         <!---------->
         <!---Mobile---->
         <section class="mobile">
@@ -141,7 +149,7 @@
 		<!--footer Mobile-->
 		
 		<footer class="mobile">
-			<nav class="navbar">
+			<nav>
 				<ul class="menu flex__row"> <!--Menu-->
 					<li class="menu__item">
 						<a class="menu__link" href="./Luco.html">Luco</a>

@@ -120,7 +120,7 @@ footer .wsp__img{
 /*-----CuerposPpals------*/
 /*index*/
 .index__ppal{
-    grid-column: 3 / 11; /*Poscion en la grilla del body*/
+    grid-column: 2 / 12; /*Poscion en la grilla del body*/
     grid-row: 2 / 12; /*Poscion en la grilla del body*/
     display: flex;
     flex-direction: row;
@@ -147,7 +147,7 @@ footer .wsp__img{
 }
 
 .panes__img{
-    width: 100%;
+    width: 50%;
     height: auto;
     /*padding-top: 1em;
     margin-left: 1em;*/
@@ -196,7 +196,7 @@ footer .wsp__img{
 }
 
 .mousse__img{
-    width: 100%;
+    width: 50%;
     height: auto;
     /*padding-top: 1em;*/
     transition: .5s ease;
@@ -220,7 +220,7 @@ footer .wsp__img{
 }
 
 .medialuna__img{
-    width: 100%;
+    width: 50%;
     height: auto;
     transition: .5s ease;
 }
@@ -376,8 +376,8 @@ footer .wsp__img{
 /*---------------------------*/
 /*-------Contacto------------*/
 .contacto__ppal{
-    grid-column: 1 / 14; /*Poscion en la grilla del body*/
-	grid-row: 4 / 10; /*Poscion en la grilla del body*/
+    grid-column: 1 / 13; /*Poscion en la grilla del body*/
+	grid-row: 2 / 12; /*Poscion en la grilla del body*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -385,7 +385,7 @@ footer .wsp__img{
 }
 .formulario{
     justify-content: space-around;
-    height: 100%;
+    padding: 3em;
     background-color: #C4C4C4;
 }
 .formulario__header{
@@ -398,21 +398,10 @@ footer .wsp__img{
     justify-content: center;
 }
 .campo{
-    display: flex;
-    flex-direction: row;
-    width: 55%;
-    justify-content: space-between;
-    font-size: 2em;
+    font-size: 1.5em;
 }
-.campo__input{
-    width: 20vh;
-}
-.mensaje{
-    height: 20vh;
-}
-.enviar{
-    justify-content: center;
-}
+
+
 /*-------------------*/
 /* Mobile - screen menor que 600px de ancho */
 @media screen and (max-width: 600px) {
@@ -438,11 +427,7 @@ footer .wsp__img{
         align-items: center;
         padding-top: 1em;
     }
-    header .navbar__mobile{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
+   
     header .logo__mobile__img{
         max-height: 3em;
     }
@@ -465,14 +450,19 @@ footer .wsp__img{
     .mobile nav{
         width: 100%;
     }
-    .mobile ul{
-        justify-content: space-between;
-        align-items: baseline;
+    
+    .mobile .menu{
+        padding: 0;
+        margin: 0;
+        justify-content:space-around;
+        width: 100%;
     }
     ul .menu__item{
         background-color: #F3F3E2;
-        padding: 1rem;
         font-size: 1.5rem;
+        text-align: center;
+        padding: 0.5em;
+        
     }
     /*------------------*/
     /*-----CuerposPpals------*/
@@ -584,8 +574,8 @@ footer .wsp__img{
     }
     /*Contacto*/
     .contacto__ppal{
-        grid-column: 3 / 11; /*Poscion en la grilla del body*/
-        grid-row: 3 / 10; /*Poscion en la grilla del body*/
+        grid-column: 1 / 13; /*Poscion en la grilla del body*/
+        grid-row: 2 / 12; /*Poscion en la grilla del body*/
         background-color: #C4C4C4;
     }
     .formulario{
