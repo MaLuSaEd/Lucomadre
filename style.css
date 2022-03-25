@@ -84,7 +84,7 @@ header .menu{
     justify-content: space-between;
     align-items: baseline;
 }
-header .menu__item{
+/*header .menu__item{
     background-color: #F3F3E2;
     padding: 1rem;
     font-size: 1.7rem;
@@ -92,13 +92,52 @@ header .menu__item{
 }
 header .menu__item :hover{
     color: blue;
-}
+}*/
 header .instagram{
     padding-right: 1em;
 }
 header .instagram__img{
     max-height: 5em;
 }
+
+.desktop nav ul li a {
+    font-size: 1.7rem;
+    position:relative;
+    padding: 1rem;
+    z-index: 1;
+  }
+.desktop nav ul li a:hover {
+  color:linear-gradient(to left, #743ad5, #d53a9d);;
+    }
+.desktop nav ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-style:outset;
+  border-image-slice: 0.5;
+  border-width: 0.1rem;
+  border-image-source:  linear-gradient(to left, #743ad5, #d53a9d);
+  /*border-radius: 50% 20% / 10% 40%;*/
+  padding: 1rem;
+  width: 100%;
+  height: 2rem;
+  content: '.';
+  color: transparent;
+  background:  #F3F3E2;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+.desktop nav ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+
 
 /*--------Fin Header Desktop------*/
 /*--------Footer Desktop---------*/
@@ -138,23 +177,23 @@ footer .wsp__img{
 .index__ppal__der{
     width: 40%;
 }
-
+/*
 .panes{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-
+*/
 .panes__img{
     width: 50%;
     height: auto;
     /*padding-top: 1em;
-    margin-left: 1em;*/
+    margin-left: 1em;
     transition: .5s ease;
-    backface-visibility: hidden;
+    backface-visibility: hidden;*/
     }
-
+/*
   .panes:hover .image {
     opacity: 0.3;
   }
@@ -162,15 +201,15 @@ footer .wsp__img{
   .panes:hover .img__titulo {
     opacity: 1;
   }
+ 
 
   .img__titulo {
     position: absolute;
     transition: .5s ease;
     opacity: 0;
     width: 20%;
-    /*transform: scale(1);*/
-
-  }
+    }
+  
 
   .texto{
     background-color: rgba(235, 235, 235, 0.3);
@@ -179,9 +218,10 @@ footer .wsp__img{
     padding: 0% 0 0% 0 ;
     text-align: center;
   }
+     */
 
 /*---Cuerpo Ppal derecho---*/
-
+/*
 .index__ppal__der{
     width: 20vw;
     display: flex;
@@ -194,14 +234,13 @@ footer .wsp__img{
     align-items: center;
     width: 100%;
 }
-
+*/
 .mousse__img{
     width: 50%;
     height: auto;
-    /*padding-top: 1em;*/
-    transition: .5s ease;
+    /*transition: .5s ease;*/
 }
-
+/*
 .mousse:hover .image {
     opacity: 1;
   }
@@ -209,22 +248,22 @@ footer .wsp__img{
 .mousse:hover .img__titulo {
     opacity: 1;
   }
-
+*/
 /*---Cuerpo Ppal medialunas-----*/
-
+/*
 .medialunas{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-
+*/
 .medialuna__img{
     width: 50%;
     height: auto;
-    transition: .5s ease;
+    /*transition: .5s ease;*/
 }
-
+/*
 .medialunas:hover .image {
     opacity: 0.3;
   }
@@ -232,6 +271,42 @@ footer .wsp__img{
 .medialunas:hover .img__titulo {
     opacity: 1;
   }
+*/
+
+/*Texto dentro del carrousel*/
+.carousel-caption{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.carousel__titulo{
+    background-color: rgba(235, 235, 235, 0.3);
+  
+    font-size: 300%;
+    padding: 0% 0 0% 0 ;
+}
+
+.carousel__parrafo{
+  
+    margin: 0;
+    width: 100%;
+    font-size: 1.5em;
+    padding: 0% 0 0% 0 ;
+}
+
+.letra--negra{
+    color: black;
+}
+
+.letra--blanca{
+    color: white;
+}
+
+
+
+
 /*--Fin index---*/
 
 /*Luco*/
@@ -278,10 +353,12 @@ footer .wsp__img{
 /*-------*/
 /*Productos*/
 
+.Productos__ppal__mobile{
+    display: none;
+}
 .Productos__ppal{
-	grid-column: 3 / 11; /*Poscion en la grilla del body*/
+	grid-column: 2 / 11; /*Poscion en la grilla del body*/
 	grid-row: 2 / 12; /*Poscion en la grilla del body*/
-	overflow:auto;
 }
 
 .productos{
@@ -305,6 +382,7 @@ footer .wsp__img{
 	width: 100%;
 	justify-content: space-around;
     margin: 1vh;
+    
 }
 
 .productos__item__foto{
@@ -457,7 +535,7 @@ footer .wsp__img{
         justify-content:space-around;
         width: 100%;
     }
-    ul .menu__item{
+    .mobile ul .menu__item{
         background-color: #F3F3E2;
         font-size: 1.5rem;
         text-align: center;
