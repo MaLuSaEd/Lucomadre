@@ -357,7 +357,7 @@ footer .wsp__img{
     display: none;
 }
 .Productos__ppal{
-	grid-column: 2 / 11; /*Poscion en la grilla del body*/
+	grid-column: 3/ 11; /*Poscion en la grilla del body*/
 	grid-row: 2 / 12; /*Poscion en la grilla del body*/
 }
 
