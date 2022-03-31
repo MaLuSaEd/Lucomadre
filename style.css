@@ -56,7 +56,7 @@ body{
 header{
     grid-column: 1 / 13; /*Poscion en la grilla del body*/
     grid-row: 1 / 2;    /*Poscion en la grilla del body*/
-    background-color:#F7F7EB; /*Color de fondo*/   
+     
 }
 /* Responsive - screen mayor igual que 600px de ancho */
 
@@ -70,6 +70,7 @@ header .navbar{
     align-items: center;
     align-content: center;
     padding: 1em;
+    background-color:#F7F7EB; /*Color de fondo*/  
 }
 header .logo{
     flex-basis: 10%; /* porcentaje que ocupa en su box */
@@ -357,7 +358,7 @@ footer .wsp__img{
     display: none;
 }
 .Productos__ppal{
-	grid-column: 3/ 11; /*Poscion en la grilla del body*/
+	grid-column: 1/ 13; /*Poscion en la grilla del body*/
 	grid-row: 2 / 12; /*Poscion en la grilla del body*/
 }
 
@@ -392,6 +393,7 @@ footer .wsp__img{
 .productos__item__img{
 	width: 80%;
 	height: auto;
+    padding: 3em 0;
 }
 
 .productos__item__descripcion{
@@ -495,6 +497,7 @@ footer .wsp__img{
     /*----------------------------------*/
     /*----header----*/
     header.mobile{
+        background-color: #F7F7EB;
         display:flex;
         flex-direction: column;
         grid-row: 1 / 2;
@@ -503,7 +506,7 @@ footer .wsp__img{
     .mobile__contenedor{
         justify-content: space-around;
         align-items: center;
-        padding-top: 1em;
+        padding: 1em;
     }
    
     header .logo__mobile__img{
@@ -525,8 +528,17 @@ footer .wsp__img{
         grid-column: 1 / 13;
     }
 
+    .navbar.fixed-bottom {
+        position: fixed;
+        right: 0;
+        bottom: 0.5em;
+        left: 0;
+        z-index: 1030;
+    }
+
     .mobile nav{
         width: 100%;
+        background-color: #F7F7EB;
     }
     
     .mobile .menu{
@@ -652,7 +664,7 @@ footer .wsp__img{
     }
     /*Contacto*/
     .contacto__ppal{
-        grid-column: 1 / 13; /*Poscion en la grilla del body*/
+        grid-column: 3 / 11; /*Poscion en la grilla del body*/
         grid-row: 2 / 12; /*Poscion en la grilla del body*/
         background-color: #C4C4C4;
     }

@@ -14,7 +14,7 @@
         <!------------------Encabezado-------------------------------->
 		<!------------------Encabezado - Desktop---------------------->
 		<header class="desktop flex_column">
-			<nav class="navbar">
+			<nav class="navbar fixed-top">
 				<picture class="logo"> <!--Logo-->
 					<a href="./index.html">
 						<img class="logo__img" src="./Media/logo-lucomadre.png" alt="logo__img">
@@ -44,7 +44,7 @@
 
 		<!--Encabezado - Mobile-->
 
-		<header class="mobile">
+		<header class="mobile fixed-top">
 
 			<div class="mobile__contenedor flex__row">
 				<picture class="instagram__mobile"> <!--Instagram-->
@@ -66,88 +66,101 @@
 				</picture>
 			</div>
 		</header>
-		<!--Fin de encabezado-->
-		<!--Productos Cuerpo PPal-->
-		<section class="Productos__ppal">
-
-			<ul class="productos">
-				
-				<li class="productos__item flex__column">
-					
-						<h3 class="productos__item__nombre">Pan de centeno</h2>
-						
-						<section class="productos__item__fotoYdescripcion">
-							
-							<picture class="productos__item__foto">
-								<img class="productos__item__img" src="./Media/Fotos/panCenteno.jpg" alt="centeno">
-							</picture>
-
-							<section class="productos__item__descripcion">
-								<p>
-									Pan 100% centeno. Mi preferido. El aroma que deja en el ambiente es increíble. 
-									La miga es húmeda y esponjosa. El sabor es intenso y muy característico, por momentos floral.
-								</p>
-
-								<p>
-									También es mi preferido porque me gusta ser contrero 😬 Se lo suele describir como "hay que acostumbrarse a su acidez", 
-									incluso a veces como "mazacote", "pan de hospital"... y yo quiero decir que nunca me pasó tal cosa, lo quiero desde siempre.
-								</p>
-
-								<p>
-									Y es el preferido de mucha gente me parece, porque es el que más sale.... 
-									A ver si lo bancan acá en público 🤓
-								</p>
-
-								<p>
-									Como siempre, 100% masamadre, sin levadura. Harinas agroecológicas/orgánicas.
-								</p>
-							</section>
-							
-						</section>
-					</div>
-	
-				</li>
-
-				<li class="productos__item flex__column">
-					
-					<h3 class="productos__item__nombre">Babka</h2>
-					
-					<section class="productos__item__fotoYdescripcion flex__row">
-						
-						<picture class="productos__item__foto">
-							<img class="productos__item__img" src="./Media/Fotos/babka.jpeg" alt="babka">
-						</picture>
-
-						<section class="productos__item__descripcion">
-							<p>
-								Babka. Masa esponjosa, suave, mantecosa, ligeramente dulce, trenzada con relleno de manteca, azúcar y canela.
-							</p>
-
-							<p>
-								Hermosa masa. Mi versión tiene harina integral orgánica @molinomayal (fermentada con masa madre, sin levadura) - huevos pastoriles @grafergranja - manteca de pastura también de Grafer - azúcar mascabo orgánica - yogur natural @granjalarecria.
-							</p>
-
-							<p>
-								Método @maurizio y las ganas de hacerla me las contagió @yosoyelpan.
-							</p>
-
-							<p>
-								Como siempre, 100% masamadre, sin levadura. Harinas agroecológicas/orgánicas.
-							</p>
-						</section>
 
 
-						
-					</section>
+
+
+		<div class="Productos__ppal container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 card">
+					<img src="./Media/Fotos/panCenteno.jpg" class="card-img-top" alt="Pan de centeno">
+					  <div class="card-body">
+						<h5 class="card-title">Pan de Centeno</h5>
+						<p class="card-text">Pan 100% centeno. Mi preferido. El aroma que deja en el ambiente es increíble. 
+							La miga es húmeda y esponjosa. El sabor es intenso y muy característico, por momentos floral.</p>
+						<p class="card-text">
+							También es mi preferido porque me gusta ser contrero 😬 Se lo suele describir como "hay que acostumbrarse a su acidez", 
+							incluso a veces como "mazacote", "pan de hospital"... y yo quiero decir que nunca me pasó tal cosa, lo quiero desde siempre.
+						</p>
+						<p class="card-text">
+							Y es el preferido de mucha gente me parece, porque es el que más sale.... 
+							A ver si lo bancan acá en público 🤓
+						</p>
+						<p class="card-text">
+							Como siempre, 100% masamadre, sin levadura. Harinas agroecológicas/orgánicas.
+						</p>
+					  </div>
 				</div>
+				<div class="col-lg-4 col-md-6 card">
+					<img src="./Media/Fotos/babka.jpeg" class="card-img-top" alt="Babka">
+					  <div class="card-body">
+						<h5 class="card-title">Babka</h5>
+						<p class="card-text">
+							Babka. Masa esponjosa, suave, mantecosa, ligeramente dulce, trenzada con relleno de manteca, azúcar y canela.
+						</p>
+						<p class="card-text">
+							Hermosa masa. Mi versión tiene harina integral orgánica @molinomayal (fermentada con masa madre, sin levadura) - huevos pastoriles @grafergranja - manteca de pastura también de Grafer - azúcar mascabo orgánica - yogur natural @granjalarecria.
+						</p>
+						<p class="card-text">
+							Método @maurizio y las ganas de hacerla me las contagió @yosoyelpan.
+						</p>
+						<p class="card-text">
+							Como siempre, 100% masamadre, sin levadura. Harinas agroecológicas/orgánicas.
+						</p>
+					  </div>
+				</div>
+				<div class="col-lg-4 col-md-6 card">
+					<img src="./Media/Fotos/panDulce.jpg" class="card-img-top" alt="panDulce">
+					  <div class="card-body">
+						<h5 class="card-title">Pan Dulce</h5>
+						<p class="card-text">Pan dulce de invierno. Sin levadura. Harina integral orgánica. Masa madre. Eso.
+							Adaptación de una receta de @alimentoyconciencia</p>
+					  </div>
+				</div>
+				<div class="col-lg-4 col-md-6 card">
+					<img src="./Media/Fotos/medialuna.jpg" class="card-img-top" alt="medialuna">
+					  <div class="card-body">
+						<h5 class="card-title">Medialunas</h5>
+						<p class="card-text">🥐 Medialunas de manteca. Antes y después.
+							Cuando me mandé a hacerlas no tenía idea de cómo se formaban, me quedaban de formas estrambóticas. 
+							Y así fui investigando, practicando, aprendiendo. Y sigo. Yo uso harina integral orgánica, 
+							azúcar mascabo orgánica (poca, queda una masa neutra, va con dulce y con salado), manteca de pastura agroecológica. Sin levadura.</p>
+					  </div>
+				</div>
+				<div class="col-lg-4 col-md-6 card">
+					<img src="./Media/Fotos/mousse3.jpg" class="card-img-top" alt="mousse">
+					  <div class="card-body">
+						<h5 class="card-title">Mousse</h5>
+						<p class="card-text">Me encanta hacer esta mousse. Cada vez que termino de hacerla, sonrío. Es un proceso estructurado, métodico y lleva un buen rato. Casi meditativo.
+							El resultado es increíble. Una mousse súper oscura que te cautiva desde el olor. Hundís la cuchara en una textura aireada y densa a la vez y el sabor, bueno, es indescriptible.
+							Todo esto es posible también porque los ingredientes son nobles: huevos pastoriles de @grafergranja - chocolate @drcacaochocolates (mezcla de 70% y 100%) - azúcar mascabo orgánica Caña dulce.
+							¿Y cómo se consigue? Voy a ir lanzando un especie de convocatorias, recolectando pedidos de antemano y cuando se junte una cantidad razonable sale toda la tanda. Atentxs a las historias que por ahí voy a ir avisando.
+							Pero además, como el universo es generoso, esta mismísima mousse será parte también del menú de @vallegrande.ba !!! Admiro y disfruto la cocina de Vallegrande.
+							Las personas que son Vallegrande son lo más. Ser parte de su menú es una gran alegría para mí.
+							Emprendimientos que se bancan así es conmovedor.
+						</p>
+					  </div>
+				</div>
+				<div class="col-lg-4 col-md-6 card">
+					<img src="./Media/Fotos/pizza.jpeg" class="card-img-top" alt="Pizza">
+					  <div class="card-body">
+						<h5 class="card-title">Pizza</h5>
+						<p class="card-text">Pizza crocante y esponjosa al mismo tiempo. Fermentación 72hs en heladera ❄️⁣
+							Arriba: salsa + queso 🧀 + morrón, cebolla y champis salteados 🍕🍕🍕⁣ La luz tenue es la que había a mano.
+						</p>
+					  </div>
+				</div>
+			</div>
+		</div>
 
-			</li>
-			</ul>
 
-		</section>
+
+
+
+		
         <!----------------footer------------------------->
 		<!--footer Desktop---->
-		<footer class="desktop">
+		<footer class="desktop fixed-bottom">
 			<div class="copyright">
 				<h4 >Copyright &copy Mariano Salguero</h4>
 			</div>
@@ -160,8 +173,8 @@
 		</footer>
 		<!--footer Mobile-->
 		
-		<footer class="mobile">
-			<nav class="navbar">
+		<footer class="mobile fixed-bottom">
+			<nav class="navbar ">
 				<ul class="menu flex__row"> <!--Menu-->
 					<li class="menu__item">
 						<a class="menu__link" href="./Luco.html">Luco</a>
