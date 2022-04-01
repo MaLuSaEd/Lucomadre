@@ -1,0 +1,44 @@
+html{
+    font-size: 62.5%  /*1 rem = 10px */ ;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+.flex__row{
+	display: flex;
+	flex-direction: row;
+}
+
+.flex__column{
+	display: flex;
+	flex-direction: column;
+}
+
+body{
+    background-color: #EBEBEB;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10vh 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 10vh;
+}
+
+
+.letra{
+    &--negra{
+        color: black;
+    }
+    &--blanca{
+        color: white;
+    }
+}
+

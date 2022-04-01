@@ -1,0 +1,63 @@
+
+.Luco{
+    &__ppal{
+        grid-column: 3 / 11; /*Poscion en la grilla del body*/
+        grid-row: 3 / 11; /*Poscion en la grilla del body*/
+        align-items: center;
+        background-color: #F4F3F6;
+        &__izq{
+            width: 32vw;
+            margin-left: 5vh;
+            margin-right: 2vh;
+        }
+        &__cen{
+            width: 30vw;
+            &__texto{
+                font-size: 1.5em;
+                line-height: 1.6em;
+                text-align: justify;
+                margin-bottom: 1em;
+            }
+        }
+        &__der{
+            width: 25vw;
+            margin-right: 5vh;
+            margin-left: 2vh;
+        }
+    }
+
+    &1__img{
+        width: 100%;
+        height: auto;
+    }
+
+    &2__img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Mobile - screen menor que 600px de ancho */
+@media screen and (max-width: 600px) {
+    /*---deshabilito todo lo del desktop--*/
+    .desktop{
+        display: none;
+    }
+    /*--habilito mobile---*/
+    .mobile{
+        display: block;
+    }
+    .Luco1__img{
+        margin-top: 1em;
+    }
+    .mobile{
+        p{
+            font-size: 1.3em;
+            line-height: 1.4em;
+            text-align: justify;
+            margin-bottom: 1em;
+        }
+    } 
+}
+
+

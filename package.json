@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-sass": "node-sass --include-path scss sass/index.scss main.css",
+    "build-sass": "node-sass --include-path scss sass/index.scss css/main.css",
     "watch-sass": "nodemon -e scss -x \" npm run build-sass\" np"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaLuSaEd/Proyecto.git"
+    "url": "git+https://github.com/MaLuSaEd/Proyecto.git" 
   },
   "keywords": [],
   "author": "",

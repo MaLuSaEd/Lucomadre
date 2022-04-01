@@ -1,0 +1,24 @@
+
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rufina&display=swap');
+
+/* Miscelaneous */
+
+@import './misc/variables';
+@import './misc/normailize';
+@import './misc/animations';
+@import './misc/mixins';
+
+/* Partials */
+
+@import './partials/header';
+@import './partials/footer';
+
+/* Views */
+
+@import './views/home';
+@import './views/Luco';
+@import './views/productos';
+@import './views/recetas';
+@import './views/contacto';
+

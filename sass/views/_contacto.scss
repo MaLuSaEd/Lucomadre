@@ -1,0 +1,74 @@
+.contacto__ppal{
+    grid-column: 1 / 13; /*Poscion en la grilla del body*/
+	grid-row: 2 / 12; /*Poscion en la grilla del body*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.formulario{
+    justify-content: space-around;
+    padding: 3em;
+    background-color: #C4C4C4;
+    &__header{
+        justify-content:  center;
+        font-size: 3em;
+    }
+    &__row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+.campo{
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+    /*---deshabilito todo lo del desktop--*/
+    .desktop{
+        display: none;
+    }
+    /*--habilito mobile---*/
+    .mobile{
+        display: block;
+    }
+    .contacto__ppal{
+        grid-column: 3 / 11; /*Poscion en la grilla del body*/
+        grid-row: 2 / 12; /*Poscion en la grilla del body*/
+        background-color: #C4C4C4;
+    }
+    .formulario{
+        justify-content: space-between;
+        height: 100%;
+        &__header{
+            justify-content:  center;
+            font-size: 3vh;
+            margin: 1vh;
+        }
+        &__row{
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-start;
+        }
+    }
+    .campo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        font-size: 1.9vh;
+        margin: 0.5vh;
+        &__input{
+            width: 100%;
+        }
+    }
+    .mensaje{
+        height: 20vh;
+    }
+    .enviar{
+        justify-content: center;
+        margin: 0.5vh;
+    }
+}
+
