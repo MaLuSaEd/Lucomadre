@@ -16,13 +16,11 @@
         margin-bottom: 2vh;
         &__nombre{
             text-align: center;
-            font-size: 7em;
+            font-size: map-get($sizes,jumbo);
         }
         &__fotoYdescripcion{
-            display: flex;
-            flex-direction: row;
+            @include flex(row,space-around);
             width: 100%;
-            justify-content: space-around;
             margin: 1vh;
         }
         &__foto{
@@ -35,7 +33,7 @@
         }
         &__descripcion{
             width: 40%;
-            font-size: 1.5em;
+            font-size: map-get($sizes , text );
             line-height: 1.6em;
             text-align: justify;
             
@@ -65,10 +63,8 @@
                 font-size: 5em;
             }
             &__fotoYdescripcion{
-                display: flex;
-                flex-direction: column;
+                @include flex(column, space-around);
                 width: 100%;
-                justify-content: space-around;
                 margin: 1vh;
             }
             &__foto{
@@ -80,9 +76,7 @@
                 margin-left: 4vh;
             }
             &__descripcion{
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
+                @include flex(column,flex-end);
                 width: 90%;
                 font-size: 1.3em;
                 line-height: 1.3em;

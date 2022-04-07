@@ -1,6 +1,7 @@
 
 .Luco{
     &__ppal{
+        @include flex(row);
         grid-column: 3 / 11; /*Poscion en la grilla del body*/
         grid-row: 3 / 11; /*Poscion en la grilla del body*/
         align-items: center;
@@ -46,6 +47,7 @@
     /*--habilito mobile---*/
     .mobile{
         display: block;
+        @include flex(column);
     }
     .Luco1__img{
         margin-top: 1em;

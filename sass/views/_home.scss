@@ -33,13 +33,13 @@
     }
     &__titulo{
         background-color: rgba(235, 235, 235, 0.3);
-        font-size: 300%;
+        font-size: map-get($sizes , jumbo );
         padding: 0% 0 0% 0 ;
     }
     &__parrafo{
         margin: 0;
         width: 100%;
-        font-size: 1.5em;
+        font-size: map-get($sizes , title ); /*Utilizo el map de los tamaños de letra*/
         padding: 0% 0 0% 0 ;
     }
 }
