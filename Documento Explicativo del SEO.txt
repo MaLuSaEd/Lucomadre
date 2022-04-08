@@ -1,0 +1,3 @@
+Agregue Keywords que creo describen los contenidos que se pueden encontrar en el sitio LucoMadre:
+        PAN, MASAMADRE, ORGANICO, MOUSSE, Comer sano, MEDIALUNAS, FERMENTOS, COMIDA VERDADERA, RECETAS
+Ademas cada pagina del sitio tiene su propio title (declarativo) y su descripcion.
