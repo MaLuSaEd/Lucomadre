@@ -36,9 +36,17 @@
         font-size: map-get($sizes , jumbo );
         padding: 0% 0 0% 0 ;
     }
+
+    &__texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     &__parrafo{
         margin: 0;
-        width: 100%;
+        width: 50%;
         font-size: map-get($sizes , title ); /*Utilizo el map de los tamaños de letra*/
         padding: 0% 0 0% 0 ;
     }

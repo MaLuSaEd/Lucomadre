@@ -249,9 +249,15 @@ footer {
   font-size: 6.8em;
   padding: 0% 0 0% 0; }
 
+.carousel__texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 .carousel__parrafo {
   margin: 0;
-  width: 100%;
+  width: 50%;
   font-size: 2em;
   /*Utilizo el map de los tamaños de letra*/
   padding: 0% 0 0% 0; }
@@ -539,16 +545,15 @@ footer {
   .contacto__ppal {
     grid-column: 3 / 11;
     /*Poscion en la grilla del body*/
-    grid-row: 2 / 12;
+    grid-row: 3 / 11;
     /*Poscion en la grilla del body*/
     background-color: #C4C4C4; }
   .formulario {
-    justify-content: space-between;
+    justify-content: center;
     height: 100%; }
     .formulario__header {
       justify-content: center;
-      font-size: 3vh;
-      margin: 1vh; }
+      font-size: 2.5vh; }
     .formulario__row {
       display: flex;
       flex-direction: row;
