@@ -10,6 +10,7 @@ header{
         padding: 1em;
         background-color:#F7F7EB; /*Color de fondo*/
         width: 100%;  
+        z-index: 2;
     }
     .logo{
         flex-basis: 10%; /* porcentaje que ocupa en su box */
