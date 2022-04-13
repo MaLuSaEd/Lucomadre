@@ -258,6 +258,7 @@ footer {
 .carousel__parrafo {
   margin: 0;
   width: 50%;
+  background-color: rgba(235, 235, 235, 0.3);
   font-size: 2em;
   /*Utilizo el map de los tamaños de letra*/
   padding: 0% 0 0% 0; }

@@ -47,6 +47,7 @@
     &__parrafo{
         margin: 0;
         width: 50%;
+        background-color: rgba(235, 235, 235, 0.3);
         font-size: map-get($sizes , title ); /*Utilizo el map de los tamaños de letra*/
         padding: 0% 0 0% 0 ;
     }
