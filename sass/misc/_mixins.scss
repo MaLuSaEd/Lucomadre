@@ -64,5 +64,8 @@ body{
         @extend .letra;
         color: white;
     }
+    &--negrita{
+        font-weight: 600;
+    }
 }
 

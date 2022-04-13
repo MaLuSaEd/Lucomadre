@@ -25,16 +25,23 @@
         }
         &__foto{
             width: 50%;
+            margin-top: 10%;
         }
         &__img{
-            width: 80%;
+            width: 100%;
             height: auto;
         }
         &__descripcion{
             width: 40%;
             font-size: map-get($sizes , text );
-	    line-height: 1.6em;
-	    text-align: justify;
+	        line-height: 1.6em;
+	        text-align: justify;
+            &__ingredientes{
+                margin-bottom: 1rem;
+                &__lista{
+                    list-style-type: disc;
+                }
+            }
         }
     }
 }

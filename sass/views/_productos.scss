@@ -5,7 +5,16 @@
     &__ppal{
         grid-column: 1/ 13; /*Poscion en la grilla del body*/
         grid-row: 2 / 12; /*Poscion en la grilla del body*/
+        &__productos{
+            margin-top: 1em;
+            margin-bottom: 3em;
+        }
     }
+
+}
+
+.card{
+    border: 0;
 }
 
 .productos{
