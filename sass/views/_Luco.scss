@@ -14,7 +14,7 @@
         &__cen{
             width: 30vw;
             &__texto{
-                font-size: 1.5em;
+                font-size:map-get($sizes , text );
                 line-height: 1.6em;
                 text-align: justify;
                 margin-bottom: 1em;
@@ -54,10 +54,11 @@
     }
     .mobile{
         p{
-            font-size: 1.3em;
+            font-size: 1.5em;
             line-height: 1.4em;
             text-align: justify;
             margin-bottom: 1em;
+            padding: 1em 1em 0 1em;
         }
     } 
 }

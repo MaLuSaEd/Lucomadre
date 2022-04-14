@@ -347,10 +347,11 @@ footer {
   .Luco1__img {
     margin-top: 1em; }
   .mobile p {
-    font-size: 1.3em;
+    font-size: 1.5em;
     line-height: 1.4em;
     text-align: justify;
-    margin-bottom: 1em; } }
+    margin-bottom: 1em;
+    padding: 1em 1em 0 1em; } }
 
 .Productos__ppal__mobile {
   display: none; }
