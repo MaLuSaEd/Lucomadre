@@ -548,6 +548,10 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center; }
+  .formulario__btn {
+    color: whitesmoke;
+    background-color: #663c0399;
+    border-color: azure; }
 
 .campo {
   font-size: 1.5em; }
@@ -575,6 +579,10 @@ footer {
       display: flex;
       flex-direction: row;
       justify-content: flex-start; }
+    .formulario__btn {
+      color: whitesmoke;
+      background-color: #663c0399;
+      border-color: azure; }
   .campo {
     display: flex;
     flex-direction: column;
