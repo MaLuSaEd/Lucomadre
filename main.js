@@ -2,6 +2,12 @@ let nro;
 alert("Para validad que no sos un robot te vamos a hacer algunas preguntas.");
 nro = prompt("Elige un numero del 1 al 10:");
 nro = parseInt(nro);
+while(isNaN(nro) || nro < 1 || nro > 10){
+    alert("Entrada no valida, vuelva a intentarlo.");
+    nro = prompt("Elige un numero del 1 al 10:");
+    nro = parseInt(nro);
+}
+
 let aprobado = false;
 let aleatorio = Math.random();
 aleatorio = 10/aleatorio;
